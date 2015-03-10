@@ -1,0 +1,157 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vundle
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" My Plugins
+Plugin 'mileszs/ack.vim'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-commentary'
+Plugin 'kien/ctrlp.vim'
+Plugin 'rwscarb/decipher-clips'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'nvie/vim-flake8'
+Plugin 'tpope/vim-repeat'
+Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/TaskList.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'triglav/vim-visual-increment'
+Plugin 'bronson/vim-visual-star-search'
+Plugin 'sukima/xmledit'
+
+" My Bundles
+Bundle 'chase/vim-ansible-yaml'
+
+" My Syntax
+Plugin 'tpope/vim-markdown'
+Plugin 'groenewege/vim-less'
+Plugin 'pangloss/vim-javascript'
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => My Vimrc
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nostartofline       " vertical movements not effected by blank lines
+set wildmenu            " tab completion
+set history=700         " lines of history to remember
+set nrformats=alpha     " increment alpha as well as digits
+set ruler               " show position of cursor
+set cmdheight=1         " command bar height
+set hid                 " allow changing buffers without saving first
+set ignorecase          " case insensitive searching
+set smartcase           " case sensitive if capital present
+set hlsearch            " highlighted searches
+set incsearch           " jump to matches while searching
+set nolazyredraw        " redraw while executing macros
+set magic               " less escaping in regex
+set showmatch           " highlight other bracket
+set novisualbell        " no bells
+set noerrorbells        " no bells
+set t_vb=               " no bells
+set expandtab           " spaces instead of tabs
+set shiftwidth=4        " indent 4 spaces 
+set tabstop=4           " tab 4 spaces
+set smarttab            " make tabbing smarter
+set shiftround          " make tabbing smarter
+set ai                  " match previous line's indentation
+set si                  " smart indenting
+set wrap                " wrap instead of truncate long lines
+set laststatus=2        " show status bar
+
+try
+    lang en_US
+catch
+endtry
+
+
+let g:mapleader = ","
+
+nmap <leader>ne :set noexpandtab!<CR>
+nmap <leader>nw :set nowrap!<CR>
+nmap <leader>ts :set ts=50<CR>
+nmap <leader>sp :set spell!<CR>
+nmap <leader>li :set list!<CR>
+nmap <leader>pa :set paste!<CR>
+map <leader>bd :bd!<CR>
+map <leader>ba :1,300 bd!<CR>
+map <leader>del :!rm %<CR>
+map <leader>cd :cd %:p:h<CR>
+map <silent> <leader><CR> :noh<CR>
+map <leader>e :e! ~/.vimrc<CR>
+autocmd! bufwritepost vimrc source ~/.vimrc  " reload vimrc edits
+ 
+" bash like keys for the command line
+cnoremap <C-A>      <Home>
+cnoremap <C-E>      <End>
+cnoremap <C-K>      <C-U>
+cnoremap <C-P>      <Up>
+cnoremap <C-N>      <Down>
+ 
+" window motions
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+ 
+" window tabs
+map <leader>tn :tabnew<CR>
+map <leader>te :tabedit
+map <leader>tc :tabclose<CR>
+map <leader>tm :tabmove
+ 
+" buffers
+map <right> :bn<CR>
+map <left> :bp<CR>
+ 
+" colors and syntax
+syntax enable
+
+set nonu
+set encoding=utf8
+
+set background=dark
+colorscheme peaksea
+
+if has("gui_running")
+  set lines=60 columns=180
+  set guifont=monospace\ 11
+  set guioptions-=T
+  set t_Co=256
+endif
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => Snippets
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:snippets_dir='~/.vim/private,~/.vim/snippets'
+ 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => XML_TAG
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let xml_tag_completion_map = '<C-l>'
