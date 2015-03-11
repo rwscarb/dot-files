@@ -1,3 +1,12 @@
 [submodule "vim/vim/bundle/Vundle.vim"]
 	path = vim/vim/bundle/Vundle.vim
 	url = https://github.com/gmarik/Vundle.vim.git
+[submodule "autoenv"]
+	path = autoenv
+	url = https://github.com/kennethreitz/autoenv.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
