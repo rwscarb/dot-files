@@ -23,6 +23,8 @@ alias vspush='vagrant snapshot push'
 alias vspop='vagrant snapshot pop'
 alias vsrestore='vagrant snapshot restore `vslist|tail -n1`'
 alias vslist='vagrant snapshot list'
+alias vbremove='vagrant box remove'
 
 # Ansible
 alias play='ansible-playbook'
+alias play_with_files='ANSIBLE_KEEP_REMOTE_FILES=1 play'
