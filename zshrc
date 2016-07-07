@@ -49,7 +49,7 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( autojump bundler copydir copyfile cp debian encode64 git heroku jira pip python rvm supervisor vagrant vi-mode virtualenvwrapper web-search )
+plugins=( autojump bundler copydir copyfile cp debian encode64 git heroku jira pip python rvm supervisor vagrant virtualenvwrapper web-search )
 
 # User configuration
 
