@@ -1,1 +1,1 @@
-tmux
+set bell-style none
