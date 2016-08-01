@@ -21,6 +21,7 @@ alias vs='vagrant ssh'
 alias vpackage='vagrant package'
 alias vspush='vagrant snapshot push'
 alias vspop='vagrant snapshot pop'
+alias vssave='vagrant snapshot save'
 alias vsrestore='vagrant snapshot restore `vslist|tail -n1`'
 alias vslist='vagrant snapshot list'
 alias vblist='vagrant box list'
@@ -32,3 +33,9 @@ alias vbupdate='vagrant box update'
 # Ansible
 alias play='ansible-playbook'
 alias play_with_files='ANSIBLE_KEEP_REMOTE_FILES=1 play'
+
+# Docker
+alias drun='docker run -it --rm'
+alias dls='docker images'
+alias dps='docker ps -a'
+alias dexec='docker exec -it'
