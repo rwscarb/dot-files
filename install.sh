@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git submodule init
-git submodule update
+git submodule foreach init
+git submodule foreach update
 
 SCRIPT_DIR=$(dirname `readlink -f $0`)
 
