@@ -94,3 +94,6 @@ bindkey "$terminfo[cud1]" history-substring-search-down
 bindkey '\e.' insert-last-word
 
 test -f $HOME/.rvm/scripts/rvm && source $HOME/.rvm/scripts/rvm
+
+export NVM_DIR="/home/rscarbery/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
