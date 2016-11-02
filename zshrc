@@ -85,6 +85,7 @@ source $HOME/.aliases
 export ANSIBLE_NOCOWS=1
 export GOPATH=$HOME/go
 export PATH="$HOME/.rvm/bin:$GOPATH/bin:$PATH"
+export JAVA_HOME=/usr/java/jdk1.8.0_102
 
 bindkey \^U backward-kill-line
 bindkey "$terminfo[cuu1]" history-substring-search-up
