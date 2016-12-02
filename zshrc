@@ -98,3 +98,8 @@ test -f $HOME/.rvm/scripts/rvm && source $HOME/.rvm/scripts/rvm
 
 export NVM_DIR="/home/rscarbery/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+gcopr() {
+    git fetch origin pull/$1/head:pr/$1
+    git checkout pr/$1
+}
