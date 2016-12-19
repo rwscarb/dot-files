@@ -24,6 +24,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-repeat'
 Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/TaskList.vim'
@@ -151,7 +152,7 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" => Snippets
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:snippets_dir='~/.vim/private,~/.vim/snippets'
+let g:UltiSnipsSnippetsDir='~/.vim/private,~/.vim/snippets'
  
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
