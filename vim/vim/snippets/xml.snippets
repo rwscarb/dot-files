@@ -77,3 +77,17 @@ snippet rows
 
 snippet grouping
 	grouping="rows"
+
+snippet survey
+	survey name=test state=testing setup=time,quota,term,decLang delphi=1 compat=136:
+	
+	radio.q1:
+	  add rrr
+	end
+	suspend
+	
+	exec:
+	  print 42
+	end
+	
+	end
