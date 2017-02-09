@@ -49,7 +49,7 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( autojump bundler copydir copyfile cp debian docker encode64 git heroku jira pip python rvm supervisor vagrant virtualenvwrapper web-search )
+plugins=( autojump bundler copydir copyfile cp debian docker encode64 git heroku jira zsh-nvm pip python rvm supervisor vagrant virtualenvwrapper web-search )
 
 # User configuration
 
@@ -96,7 +96,7 @@ bindkey '\e.' insert-last-word
 
 test -f $HOME/.rvm/scripts/rvm && source $HOME/.rvm/scripts/rvm
 
-export NVM_DIR="/home/rscarbery/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 gcopr() {
