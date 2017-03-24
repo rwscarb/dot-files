@@ -1,0 +1,11 @@
+map <C-f> scrollPageDown
+map <C-u> scrollPageUp
+
+set noautofocus
+set typelinkhints
+set numerichints
+let barposition = "bottom"
+let hintcharacters = "abc123"
+map gb :buffer<Space>
+
+let blacklists = ["https://mail.google.com/*", "*://mail.google.com/*", "@https://mail.google.com/mail/*", "https://*.slack.com/*"]
