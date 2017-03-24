@@ -43,3 +43,4 @@ alias dexec='docker exec -it'
 
 # LastPass
 alias lpass-copy='lpass show --password -c'
+alias bl='beacon -s local'
