@@ -2,4 +2,5 @@
 *.pyc
 *.swp
 *.swo
-vim/vim/bundle
+vim/vim/bundle/
+tmux/plugins/
