@@ -107,3 +107,10 @@ gcopr() {
 gcomb() {
     git branch -f base `git merge-base HEAD master`
 }
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export ANDROID_HOME=${HOME}/Android/Sdk
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools
+
