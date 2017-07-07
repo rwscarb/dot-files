@@ -1,6 +1,4 @@
-**/*.DS_Store
-*.pyc
-*.swp
-*.swo
-vim/vim/bundle/
 tmux/plugins/
+tmux/tmux
+vim/vim/bundle/
+vim/vim/vim

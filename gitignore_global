@@ -1,4 +1,5 @@
 # compiled
+*.pyc
 *.com
 *.class
 *.dll
@@ -24,8 +25,13 @@
 # fan boy stuff
 .DS_Store
 .DS_Store?
-._*
 .Spotlight-V100
 .Trashes
+
+# wtf
+._*
 ehthumbs.db
 Thumbs.db
+
+# apps
+.idea/
